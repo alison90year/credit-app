@@ -1,0 +1,2 @@
+export const CHANGE_INPUT_VALUE = 'blankInfoDetail/CHANGE_INPUT_VALUE'
+export const CHECKE_INPUT_ISCOMPETED = 'blankInfoDetail/CHECKE_INPUT_ISCOMPETED'

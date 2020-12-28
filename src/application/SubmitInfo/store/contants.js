@@ -1,0 +1,2 @@
+
+export const CHECKE_INPUT_ISCOMPETED = 'submitInfo/CHECKE_INPUT_ISCOMPETED'
