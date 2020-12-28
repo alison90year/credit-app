@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
@@ -25,7 +11,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/test" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mHx0wncg0bwmiB6SxbTbqC8HVO" />
@@ -73,11 +67,24 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="343434" />
+    <option name="LAST_COMMIT_MESSAGE" value="343434" />
   </component>
   <component name="WindowStateProjectService">
     <state x="378" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609165715609">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state x="378" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1033@0.23.1792.1033" timestamp="1609165715609" />
+    <state x="182" y="65" key="MergeDialog" timestamp="1609167948063">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state x="182" y="65" key="MergeDialog/0.23.1792.1033@0.23.1792.1033" timestamp="1609167948063" />
+    <state x="536" y="257" key="MultipleFileMergeDialog" timestamp="1609167948113">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state x="536" y="257" key="MultipleFileMergeDialog/0.23.1792.1033@0.23.1792.1033" timestamp="1609167948113" />
   </component>
 </project>
