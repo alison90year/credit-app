@@ -1,3 +1,0 @@
-export const CHANGE_INPUT_VALUE = 'feedBack/CHANGE_INPUT_VALUE'
-export const SUBMIT_INPUT_BTN = 'feedBack/SUBMIT_INPUT_BTN'
-export const SUBMIT_CLEAR_CONTENT = 'feedBack/SUBMIT_CLEAR_CONTENT'
