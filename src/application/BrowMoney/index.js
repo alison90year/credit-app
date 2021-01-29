@@ -78,16 +78,16 @@ class BrowMoeny extends React.Component {
     }
     paySubmit(){
         const { isCompeted ,history} = this.props
+        const params = {
+            userId:getUid(),
+            s:createMd5NoApi('/pay/submit',`userid=${getUid()}&amount=${this.state.Disbursal}`),
+            amount:this.state.SecurityDeposit
+        }
         if(!isCompeted){
             alert('Do you want to perfect your information', <div></div>, [
                 { text: 'cancel', onPress: () => {
                         FB.AppEvents.logEvent("Subscribe");
                         FB.AppEvents.logEvent("Purchase");
-                        const params = {
-                            userId:getUid(),
-                            s:createMd5NoApi('/pay/submit',`userid=${getUid()}&amount=${this.state.Disbursal}`),
-                            amount:this.state.SecurityDeposit
-                        }
                         getPaySubmit(params).then(res => {
                             if(res.code === 0){
                                 window.location.href= res.msg
@@ -98,8 +98,13 @@ class BrowMoeny extends React.Component {
                         history.push('/baseInfoDetail')
                     } },
             ])
+            return false
         }
-
+        getPaySubmit(params).then(res => {
+            if(res.code === 0){
+                window.location.href= res.msg
+            }
+        })
     }
     init(){
         const { dayActiveType ,priceActiveType} = this.state
