@@ -22,7 +22,7 @@ export function setUser(info) {
     return localStorage.setItem(User,JSON.stringify(info))
 }
 export function getUser() {
-    return JSON.parse(localStorage.getItem(User)) || {}
+    return JSON.parse(localStorage.getItem(User)) || null
 }
 export function removeUser(){
     localStorage.clear()

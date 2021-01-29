@@ -4,7 +4,7 @@ import AnimatedSwitch from './AnimatedSwitch'
 import StackSwitch from './StackSwitch'
 import { WrappedAnimatedRoute } from './WrapedComp'
 import Loading from '../baseUI/loading'
-import {getUid} from "../utils/auth";
+import {getUid, getUser} from "../utils/auth";
 const PropTypes = require('prop-types')
 
 // Transition animation type configuration
@@ -84,14 +84,14 @@ class Router extends React.Component {
                         {useStackSwitch
                             ? null
                             : routerConfig.map((config, index) => {
-                                return (
-                                    <Route
-                                        exact
-                                        key={index}
-                                        {...config}
-                                        component={WrappedAnimatedRoute(config.component)}
-                                    />
-                                )
+                                        return(
+                                            <Route
+                                                exact
+                                                key={index}
+                                                {...config}
+                                                component={WrappedAnimatedRoute(config.component)}
+                                            />
+                                        )
                             })}
                     </CommonSwitch>
                 </Suspense>
@@ -99,5 +99,12 @@ class Router extends React.Component {
         )
     }
 }
-
+// return(
+//     <Route
+//         exact
+//         key={index}
+//         {...config}
+//         component={WrappedAnimatedRoute(config.component)}
+//     />
+// )
 export default Router

@@ -20,7 +20,7 @@ export const checkInputIsCompetedDispatch = (data) => {
             }
             getEditWorkInfo(params).then(res => {
               if(res.code === 0){
-                  Toast.success('修改成功',1,() => {
+                  Toast.success('Successfully modified',1,() => {
                       data.history.push('/myProfile')
                   })
               }

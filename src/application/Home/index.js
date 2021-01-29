@@ -15,7 +15,7 @@ import roundIcon from '../../assets/round.svg'
 import cinfo from '../../assets/classfiy-info.svg'
 import cstore from '../../assets/classfiy-store.svg'
 import cmoney from '../../assets/classfiy-money.svg'
-import {getUid} from "../../utils/auth";
+import {getUid, getUser} from "../../utils/auth";
 import {createMd5, formateData} from "../../utils";
  class Home extends React.Component{
     constructor(props) {
@@ -27,6 +27,7 @@ import {createMd5, formateData} from "../../utils";
         }
         this.changeCheckBoxActive = this.changeCheckBoxActive.bind(this)
     }
+
      changeCheckBoxActive(index){
            this.setState({
                activeType:index
@@ -54,6 +55,10 @@ import {createMd5, formateData} from "../../utils";
          // })
      }
      componentDidMount() {
+         if(getUser()){
+             this.props.history.push('/browMoeny')
+              return
+         }
         this.init()
      }
      render(){

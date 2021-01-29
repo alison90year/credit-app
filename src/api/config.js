@@ -3,9 +3,9 @@ import QS from 'qs'
 import { Toast } from 'antd-mobile';
 let baseUrl = ''
 if(process.env.NODE_ENV === 'development'){
-    baseUrl = 'http://154.92.18.244:803/'
+    baseUrl = 'http://api.coolcash.top:803/'
 }else{
-    baseUrl = 'http://154.92.18.244:803/'
+    baseUrl = 'http://api.coolcash.top:803/'
 }
 //axios的实例以及拦截器配置
 const service = axios.create({
@@ -38,7 +38,8 @@ function responseCodeHandle(res) {
         return res
     } else {
         if (res.code === 1) {
-            Toast.offline( 'network Disconnected',2)
+            Toast.offline( '\n' +
+                'Request failed, please contact customer service')
             return res
         }
         return Promise.reject(new Error( res))

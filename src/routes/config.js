@@ -20,6 +20,9 @@ export default [
                         enter: 'from-right',
                         exit: 'to-right',
                     },
+                    name:'login',
+                    redirect:'/login',
+                    meta:{require:false}
                 },
                 {
                     path:'/home',
@@ -29,6 +32,7 @@ export default [
                         enter: 'from-right',
                         exit: 'to-right',
                     },
+                    meta:{require:false}
                 },
                 {
                     path:'/baseInfo',
@@ -38,6 +42,7 @@ export default [
                         enter: 'from-right',
                         exit: 'to-right',
                     },
+                    meta:{require:true}
                 },
                 {
                     path:'/workInfo',
@@ -46,6 +51,7 @@ export default [
                         enter: 'from-right',
                         exit: 'to-right',
                     },
+                    meta:{require:true}
                 },
                 {
                     path:'/blankInfo',
@@ -55,6 +61,7 @@ export default [
                         enter: 'from-right',
                         exit: 'to-right',
                     },
+                    meta:{require:true}
                 },
                 {
                     path:'/baseInfoDetail',
@@ -64,6 +71,7 @@ export default [
                         enter: 'from-right',
                         exit: 'to-right',
                     },
+                    meta:{require:true}
                 },
                 {
                     path:'/workInfoDetail',
@@ -73,6 +81,7 @@ export default [
                         enter: 'from-right',
                         exit: 'to-right',
                     },
+                    meta:{require:true}
                 },
                 {
                     path:'/blankInfoDetail',
@@ -82,6 +91,7 @@ export default [
                         enter: 'from-right',
                         exit: 'to-right',
                     },
+                    meta:{require:true}
                 },
                 {
                     path:'/login',
@@ -90,6 +100,7 @@ export default [
                         enter: 'from-right',
                         exit: 'to-right',
                     },
+                    meta:{require:false}
                 },
                 {
                     path:'/subInfo',
@@ -98,6 +109,7 @@ export default [
                         enter: 'from-right',
                         exit: 'to-right',
                     },
+                    meta:{require:true}
                 },
                 {
                     path:'/myProfile',
@@ -106,6 +118,7 @@ export default [
                         enter: 'from-bottom',
                         exit: 'to-bottom',
                     },
+                    meta:{require:true}
                 },
 
                 {
@@ -115,6 +128,7 @@ export default [
                         enter: 'from-right',
                         exit: 'to-right',
                     },
+                    meta:{require:true}
                 },
                 {
                     path:'/contactUs',
@@ -123,6 +137,7 @@ export default [
                         enter: 'from-bottom',
                         exit: 'to-bottom',
                     },
+                    meta:{require:true}
                 },
                 {
                     path:'/feedback',
@@ -130,7 +145,8 @@ export default [
                     sceneConfig: {
                         enter: 'from-bottom',
                         exit: 'to-bottom',
-                    }
+                    },
+                    meta:{require:true}
                 },
                 {
                     path:'/creditCheck',
@@ -138,7 +154,8 @@ export default [
                     sceneConfig: {
                         enter: 'from-right',
                         exit: 'to-right',
-                    }
+                    },
+                    meta:{require:true}
                 },
                 {
                     path:'/browMoeny',
@@ -146,7 +163,8 @@ export default [
                     sceneConfig: {
                         enter: 'from-right',
                         exit: 'to-right',
-                    }
+                    },
+                    meta:{require:true}
                 },
                 {
                     path:'/vipRecommend',
@@ -154,10 +172,12 @@ export default [
                     sceneConfig: {
                         enter: 'from-right',
                         exit: 'to-right',
-                    }
+                    },
+                    meta:{require:true}
                 },
                 {
                     path:'*',
                     component:Error404,
+                    meta:{require:false}
                 }
 ]

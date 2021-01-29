@@ -19,7 +19,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca5b799-0894-434c-8f2b-05be5d4f4c2a" name="Default Changelist" comment="" />
+    <list default="true" id="5ca5b799-0894-434c-8f2b-05be5d4f4c2a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/BaseInfo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/BaseInfo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/BaseInfoDetail/store/actionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/BaseInfoDetail/store/actionCreators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/BlankInfo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/BlankInfo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/FeedBack/store/actionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/FeedBack/store/actionCreators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Legend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Legend/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/My/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/My/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/WorkInfoDetail/store/actionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/WorkInfoDetail/store/actionCreators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/auth.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -48,6 +66,16 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/credit-app/build/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,6 +85,11 @@
       <option name="presentableId" value="Default" />
       <updated>1609164097806</updated>
       <workItem from="1609164098968" duration="1728000" />
+      <workItem from="1609672830796" duration="9232000" />
+      <workItem from="1609944634350" duration="139000" />
+      <workItem from="1610109155447" duration="1571000" />
+      <workItem from="1610896798619" duration="1837000" />
+      <workItem from="1611927399784" duration="1178000" />
     </task>
     <servers />
   </component>
@@ -73,11 +106,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="378" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609165715609">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state x="378" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1033@0.23.1792.1033" timestamp="1609165715609" />
+    <state x="594" y="294" width="604" height="490" key="find.popup" timestamp="1610897826004">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state x="594" y="294" width="604" height="490" key="find.popup/0.23.1792.1033@0.23.1792.1033" timestamp="1610897826004" />
   </component>
 </project>

@@ -5,6 +5,7 @@ import { Content , ShadowBox  ,SubMitBtn} from '../../baseUI/CommonUI'
 import  InputItemText  from '../../baseUI/BaseInput'
 import { changeInputValueDispatch ,checkInputIsCompetedDispatch } from './store/actionCreators'
 import { Tips } from './style'
+import {getUser} from "../../utils/auth";
 
 class BlankInfo extends React.Component {
     constructor(props) {
@@ -13,6 +14,13 @@ class BlankInfo extends React.Component {
             titleName :'Blank Info'
         }
     }
+    componentDidMount() {
+        console.log(getUser())
+        if(!getUser()){
+            this.props.history.push('/login')
+        }
+    }
+
     render(){
         const { titleName } = this.state
         const { history ,ifscCode ,bankName ,bankAccount ,handleClickNextSubmit ,changeInputValue } = this.props

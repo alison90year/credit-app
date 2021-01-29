@@ -23,7 +23,8 @@ export const subMitInputBtnDispatch = (data) => {
         }
         getFeedBack(params).then(res => {
             if(res.code === 0) {
-                Toast.success('反馈成功',1,()=>{
+                Toast.success('\n' +
+                    'Feedback success',1,()=>{
                     dispatch(submitClearContent(''))
                     data.history.push('/myProfile')
                 })

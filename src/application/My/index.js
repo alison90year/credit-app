@@ -24,7 +24,7 @@ class My extends React.Component{
     }
     componentDidMount() {
         if(!getUid()){
-            Toast.info('请登录',1,()=>{
+            Toast.info('Please Login',1,()=>{
                 this.props.history.push('/login')
             })
         }
@@ -35,7 +35,7 @@ class My extends React.Component{
                <Header imgUrl={bg01} imgPeople={bg02}>
                    <AvatarWrap imgUrl={avatar01}>
                        <div className={'avatar-pic'}></div>
-                       <div className={'avatar-text'}>{this.props.account || 'not login'}</div>
+                       <div className={'avatar-text'}>{this.props.account}</div>
                    </AvatarWrap>
                </Header>
                <div className={'main'}>
@@ -115,7 +115,7 @@ const mapStateToProps = (state) => {
         tintColor:state.getIn(['my','tintColor']),
         files:state.getIn(['my','files']),
         multiple:state.getIn(['my','multiple']),
-        account:getUser().Accounts
+        account:getUser()!=null?getUser().Accounts:'not login'
     }
 }
 const mapDispatchToProps = (dispatch,ownProps) => {

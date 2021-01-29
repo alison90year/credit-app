@@ -18,8 +18,8 @@ export const MaritalData = [
         label: 'Married',
         key:'0'
     }, {
-        value: 'Unarried',
-        label: 'Unarried',
+        value: 'Unmarried',
+        label: 'Unmarried',
         key:'1'
     }
 ]

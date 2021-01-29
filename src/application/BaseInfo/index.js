@@ -5,7 +5,7 @@ import {Content , ShadowBox  ,SubMitBtn } from '../../baseUI/CommonUI'
 import {changeInputValueDispatch ,checkInputIsCompetedDispatch } from './store/actionCreators'
 import  InputItemText  from '../../baseUI/BaseInput'
 import { birthDayData ,GenderData , MaritalData ,EducationData  } from '../../api'
-import {getUid} from "../../utils/auth";
+import {getUid, getUser} from "../../utils/auth";
 class BaseInfo extends React.Component {
     constructor(props) {
         super(props);
@@ -13,7 +13,14 @@ class BaseInfo extends React.Component {
             titleName : 'Basic Info',
         }
     }
-     render(){
+
+    componentDidMount() {
+        console.log(getUser())
+        if(!getUser()){
+            this.props.history.push('/login')
+        }
+    }
+    render(){
         const { history ,handleSelectText ,handleClickNextSubmit ,Compellation,Birthday ,Gender ,Marital ,Education,Email ,changeInputValue} = this.props
          const { titleName} = this.state
          return (
