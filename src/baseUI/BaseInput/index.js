@@ -67,6 +67,7 @@ const  InputItemText = (props) => {
                             extra={iconHtml}
                             value={[inputValue]}
                             okText={'Done'} cols={cols|| 1}
+                            dismissText={'Cancel'}
                             onOk={(val) => handleSelectText ({inputValue:val,classFiy:classFiy})}
                             Done={'Cancel'} data={data}
                     >

@@ -15,7 +15,6 @@ class BaseInfo extends React.Component {
     }
 
     componentDidMount() {
-        console.log(getUser())
         if(!getUser()){
             this.props.history.push('/login')
         }
