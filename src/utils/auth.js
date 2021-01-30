@@ -13,10 +13,10 @@ export function removeToken() {
 }
 
 export function getUid() {
-    return Cookies.get(UidKey)
+    return getUser() ? getUser().UserID:null
 }
 export function setUid(uid) {
-    return Cookies.set(UidKey, uid)
+    return localStorage.setItem(UidKey,uid)
 }
 export function setUser(info) {
     return localStorage.setItem(User,JSON.stringify(info))

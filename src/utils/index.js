@@ -1,6 +1,6 @@
 import { Toast } from 'antd-mobile'
 import md5 from 'md5'
-import {setUid, getUid, getToken} from '../utils/auth'
+import { getToken} from '../utils/auth'
     // 91981059788
     // 917526812579
 const fromHasEmpty = 'Please complete the form content!' //验证提示

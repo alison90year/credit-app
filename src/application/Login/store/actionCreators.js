@@ -44,8 +44,6 @@ export const changeInputLogin = (data) => {
                 console.log(res)
                 if(res.code === 0){
                     Toast.success('login success',1,()=> {
-                        //保存userid 到本地
-                        setUid(res.data.UserID)
                         setUser(res.data)
                         //保存个人信息到redux
                         dispatch(changeInputLoginAction(res.data))
