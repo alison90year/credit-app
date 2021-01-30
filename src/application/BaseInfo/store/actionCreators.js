@@ -14,7 +14,7 @@ export const checkInputIsCompetedDispatch = (data) => {
    return (dispatch) => {
       if(baseInputCheckisCompeted(data)) {
           const params = {
-              UserID:parseInt(getUid()),
+              UserID:getUid(),
               s:createMd5('/account/editbasicinfo',`userid=${getUid()}`),
               Compellation:data.Compellation,
               Gender:data.Gender === 'Male' ? 0 :1,

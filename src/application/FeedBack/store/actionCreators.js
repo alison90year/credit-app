@@ -17,7 +17,7 @@ export const subMitInputBtnDispatch = (data) => {
     return (dispatch) => {
         const params = {
             content:data.content,
-            userId:parseInt(getUid()),
+            userId:getUid(),
             accounts:data.accounts,
             s:createMd5('/feedback',`userId=${getUid()}`)
         }

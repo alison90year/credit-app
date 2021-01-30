@@ -25,7 +25,7 @@ export const checkInputIsCompetedDispatch = (data) => {
                 dispatch(isCompetedByBankInfo(true))
                 FB.AppEvents.logEvent("StartTrial");
                 const params = {
-                    UserID:parseInt(getUid()),
+                    UserID:getUid(),
                     IFSCCode:data.IFSCCode,
                     BankName:data.BankName,
                     BankAccountNo:data.BankAccountNo,

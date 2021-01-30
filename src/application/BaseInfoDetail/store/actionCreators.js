@@ -13,7 +13,7 @@ export const checkInputIsCompetedDispatch = (data) => {
       if(baseInputCheckisCompeted(data)) {
          //验证通过
           const params = {
-              UserID:parseInt(getUid()),
+              UserID:getUid(),
               s:createMd5('/account/editbasicinfo',`userid=${getUid()}`),
               Compellation:data.Compellation,
               Gender:data.Gender === 'Female' ? 1 :0,

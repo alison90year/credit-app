@@ -11,7 +11,7 @@ export const checkInputIsCompetedDispatch = (data) => {
      return (dispatch) => {
             if(blankInputCheckisCompeted(data)) {
                 const params = {
-                    UserID:parseInt(getUid()),
+                    UserID:getUid(),
                     IFSCCode:data.IFSCCode,
                     BankName:data.BankName,
                     BankAccountNo:data.BankAccountNo,

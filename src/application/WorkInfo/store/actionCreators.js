@@ -16,7 +16,7 @@ export const checkInputIsCompetedDispatch = (data) => {
         if(workInputCheckisCompeted(data)) {
                 dispatch(isCompetedByWorkInfo(true))
                 const params = {
-                    UserID:parseInt(getUid()),
+                    UserID:getUid(),
                     EmploymentType:data.EmploymentType,
                     MoneySalary:data.MoneySalary,
                     MonthlyFamilyIncome:data.MonthlyFamilyIncome,

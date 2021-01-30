@@ -12,7 +12,7 @@ export const checkInputIsCompetedDispatch = (data) => {
     return (dispatch) => {
         if(workInputCheckisCompeted(data)) {
             const params = {
-                UserID:parseInt(getUid()),
+                UserID:getUid(),
                 EmploymentType:data.EmploymentType,
                 MoneySalary:data.MoneySalary,
                 MonthlyFamilyIncome:data.MonthlyFamilyIncome,
