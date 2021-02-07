@@ -133,7 +133,6 @@ const mapDispatchToProps = (dispatch,ownProps) => {
                 { text: 'ok', onPress: () => {
                         if(getUid()){
                             Toast.info('exiting',2,() => {
-                                removeUid()
                                 removeUser()
                                 props.history.push('/login')
                             })

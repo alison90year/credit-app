@@ -2,15 +2,7 @@ import * as actionTypes from './constants'
 import { blankInputCheckisCompeted ,createMd5 } from '../../../utils/index'
 import {getEditBlankInfo} from '../../../api/request'
 import {getUid} from "../../../utils/auth";
-import '../../../api/facebookSdk'
-window.fbAsyncInit = function() {
-    FB.init({
-        appId      : '1515355465520643',
-        xfbml      : true,
-        version    : 'v9.0'
-    });
-    FB.AppEvents.logPageView();
-};
+import { initFacebookSdk } from '../../../api/facebookSdk'
 export const changeInputValueDispatch = (data) => ({
     type:actionTypes.CHANGE_INPUT_VALUE,
     data
@@ -23,7 +15,7 @@ export const checkInputIsCompetedDispatch = (data) => {
      return (dispatch) => {
             if(blankInputCheckisCompeted(data)) {
                 dispatch(isCompetedByBankInfo(true))
-                FB.AppEvents.logEvent("StartTrial");
+                initFacebookSdk("StartTrial");
                 const params = {
                     UserID:getUid(),
                     IFSCCode:data.IFSCCode,

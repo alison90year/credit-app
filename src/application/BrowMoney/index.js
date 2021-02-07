@@ -12,15 +12,7 @@ import { HeaderNoticeBar, NoticeIcon } from "./style";
 import noticeIcon from "../../assets/notice.svg";
 import {getUid, removeUid} from "../../utils/auth";
 import { getPaySubmit } from '../../api/request'
-import '../../api/facebookSdk'
-window.fbAsyncInit = function() {
-    FB.init({
-        appId      : '1515355465520643',
-        xfbml      : true,
-        version    : 'v9.0'
-    });
-    FB.AppEvents.logPageView();
-};
+import { initFacebookSdk } from '../../api/facebookSdk'
 const alert = Modal.alert;
 const renderStepsHtml = () => {
     const Step = Steps.Step;
@@ -77,6 +69,7 @@ class BrowMoeny extends React.Component {
         })
     }
     paySubmit(){
+
         const { isCompeted ,history} = this.props
         const params = {
             userId:getUid(),
@@ -86,8 +79,7 @@ class BrowMoeny extends React.Component {
         if(!isCompeted){
             alert('Do you want to perfect your information', <div></div>, [
                 { text: 'cancel', onPress: () => {
-                        FB.AppEvents.logEvent("Subscribe");
-                        FB.AppEvents.logEvent("Purchase");
+                        initFacebookSdk('Subscribe')
                         getPaySubmit(params).then(res => {
                             if(res.code === 0){
                                 window.location.href= res.msg

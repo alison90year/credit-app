@@ -22,7 +22,13 @@
     <list default="true" id="5ca5b799-0894-434c-8f2b-05be5d4f4c2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/facebookSdk.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/facebookSdk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/BlankInfo/store/actionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/BlankInfo/store/actionCreators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/BrowMoney/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/BrowMoney/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/My/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/My/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/SubmitInfo/store/actionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/SubmitInfo/store/actionCreators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +82,7 @@
       <workItem from="1609944634350" duration="139000" />
       <workItem from="1610109155447" duration="1571000" />
       <workItem from="1610896798619" duration="1837000" />
-      <workItem from="1611927399784" duration="2783000" />
+      <workItem from="1611927399784" duration="10679000" />
     </task>
     <servers />
   </component>
@@ -100,9 +106,9 @@
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state x="378" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1033@0.23.1792.1033" timestamp="1609165715609" />
-    <state x="594" y="294" width="604" height="490" key="find.popup" timestamp="1610897826004">
+    <state x="594" y="163" width="604" height="621" key="find.popup" timestamp="1612087251937">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
-    <state x="594" y="294" width="604" height="490" key="find.popup/0.23.1792.1033@0.23.1792.1033" timestamp="1610897826004" />
+    <state x="594" y="163" width="604" height="621" key="find.popup/0.23.1792.1033@0.23.1792.1033" timestamp="1612087251937" />
   </component>
 </project>
